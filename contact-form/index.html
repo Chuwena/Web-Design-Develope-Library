@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contact-form"
+      >
+        <div class="contact-title">
+          <h2>Get in touch <img src="assets/form_icon.png" /></h2>
+          <br />
+        </div>
+        <input
+          type="hidden"
+          name="access_key"
+          value="b398a9f3-d72e-4bae-b7b1-e23e8a1d7787"
+        />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          class="contact-input"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          class="contact-input"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          class="contact-input"
+          required
+        ></textarea>
+        <button type="submit">
+          Submit <img src="assets/arrow_icon.png" />
+        </button>
+      </form>
+      <!-- <div class="contact-form">
+            <h2>Contact Form <img src="assets/form_icon.png"> </h2>
+            
+            <div class="row">
+                <input type="text"id="input-box" placeholder="Add task to the list">
+                <button onclick="addTask()">Add</button>
+            </div> -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
